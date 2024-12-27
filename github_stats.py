@@ -258,7 +258,7 @@ class Stats(object):
         self.username = username
         self._ignore_forked_repos = ignore_forked_repos
         self._exclude_repos = set() if exclude_repos is None else exclude_repos
-        self._exclude_langs = {"Blade", "PHP", "HTML"} if exclude_langs is None else exclude_langs
+        self._exclude_langs = {"Blade", "PHP", "HTML", "C++", "CSS"} if exclude_langs is None else exclude_langs
         self.queries = Queries(username, access_token, session)
 
         self._name: Optional[str] = None
